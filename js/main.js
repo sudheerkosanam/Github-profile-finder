@@ -2,12 +2,12 @@ $(document).ready(function(){
     $('#searchUser').on('keyup', function(e){
         let username = e.target.value;
 
-        // Make request to Github
+        // Make request to Github //4
        $.ajax({
           url:'https://api.github.com/users/'+username,
          data:{
-         	client_id:'3d4d7c34a4bc78033c58',
-         	client_secret:'295aab06a5e332640cfa7614d41cc4b37f9ac1c9'
+         	client_id:'3d*d7c3*a*bc78033c58',
+         	client_secret:'295aab06a5e3326*0cfa761*d*1cc*b37f9ac1c9'
          }
        }).done(function(user){
        	      $.ajax({
